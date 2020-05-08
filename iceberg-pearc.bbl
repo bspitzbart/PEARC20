@@ -1,0 +1,221 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{13}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Balasubramanian, Turilli, Hu, Lefebvre, Lei,
+  Modrak, Cervone, Tromp, and Jha}{Balasubramanian et~al\mbox{.}}{2018}]%
+        {balasubramanian2018harnessing}
+\bibfield{author}{\bibinfo{person}{Vivek Balasubramanian},
+  \bibinfo{person}{Matteo Turilli}, \bibinfo{person}{Weiming Hu},
+  \bibinfo{person}{Matthieu Lefebvre}, \bibinfo{person}{Wenjie Lei},
+  \bibinfo{person}{Ryan Modrak}, \bibinfo{person}{Guido Cervone},
+  \bibinfo{person}{Jeroen Tromp}, {and} \bibinfo{person}{Shantenu Jha}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Harnessing the power of many: Extensible toolkit
+  for scalable ensemble applications}. In \bibinfo{booktitle}{\emph{2018 IEEE
+  International Parallel and Distributed Processing Symposium (IPDPS)}}. IEEE,
+  \bibinfo{pages}{536--545}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Carpentry}{Carpentry}{2020}]%
+        {SWweb:20}
+\bibfield{author}{\bibinfo{person}{Software Carpentry}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Software Carpentry:Teaching basic lab
+  skills for research computing}}.
+\newblock
+\urldef\tempurl%
+\url{https://software-carpentry.org/}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{CI}{CI}{2020}]%
+        {travis:20}
+\bibfield{author}{\bibinfo{person}{Travis CI}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Test and Deploy with Confidence}}.
+\newblock
+\urldef\tempurl%
+\url{https://travis-ci.org/}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{CyberTools}{CyberTools}{2020}]%
+        {RCTweb:20}
+\bibfield{author}{\bibinfo{person}{Radical CyberTools}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{RADICAL Cybertools (RCT) - Scalable,
+  Interoperable and Sustainable Tools for Science}}.
+\newblock
+\urldef\tempurl%
+\url{http://radical.rutgers.edu/projects/rct}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Driessen}{Driessen}{2010}]%
+        {gitflow:20}
+\bibfield{author}{\bibinfo{person}{Vincent Driessen}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{A successful Git branching model}}.
+\newblock
+\urldef\tempurl%
+\url{https://nvie.com/posts/a-successful-git-branching-model/}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gon{\c{c}}alves, Spitzbart, and
+  Lynch}{Gon{\c{c}}alves et~al\mbox{.}}{2020}]%
+        {BCG:20}
+\bibfield{author}{\bibinfo{person}{Bento~Collares Gon{\c{c}}alves},
+  \bibinfo{person}{Bradley Spitzbart}, {and} \bibinfo{person}{Heather~J.
+  Lynch}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{SealNet: A fully-automated pack-ice seal detection
+  pipeline for sub-meter satellite imagery}.
+\newblock \bibinfo{journal}{\emph{Remote Sensing of Environment}}
+  \bibinfo{volume}{239} (\bibinfo{year}{2020}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.rse.2019.111617}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{ICEBERG}{ICEBERG}{2020}]%
+        {icebergweb:20}
+\bibfield{author}{\bibinfo{person}{ICEBERG}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{ICEBERG: Imagery Cyber-infrastructure and
+  Extensible Building blocks to Enhance Research in the Geosciences.}}
+\newblock
+\urldef\tempurl%
+\url{https://iceberg-project.github.io/about.html}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{IMaRSi}{IMaRSi}{2020}]%
+        {imarsweb:20}
+\bibfield{author}{\bibinfo{person}{IMaRSi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Institute for Marine Remote Sensing}}.
+\newblock
+\urldef\tempurl%
+\url{http://imars.usf.edu/}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Merzky, Santcroos, Turilli, and Jha}{Merzky
+  et~al\mbox{.}}{2015a}]%
+        {RP:18}
+\bibfield{author}{\bibinfo{person}{Andr{\'{e}} Merzky}, \bibinfo{person}{Mark
+  Santcroos}, \bibinfo{person}{Matteo Turilli}, {and} \bibinfo{person}{Shantenu
+  Jha}.} \bibinfo{year}{2015}\natexlab{a}.
+\newblock \showarticletitle{RADICAL-Pilot: Scalable Execution of Heterogeneous
+  and Dynamic Workloads on Supercomputers}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1512.08194}
+  (\bibinfo{year}{2015}).
+\newblock
+\showeprint[arxiv]{1512.08194}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1512.08194}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Merzky, Weidner, and Jha}{Merzky
+  et~al\mbox{.}}{2015b}]%
+        {merzky2015saga}
+\bibfield{author}{\bibinfo{person}{Andre Merzky}, \bibinfo{person}{Ole
+  Weidner}, {and} \bibinfo{person}{Shantenu Jha}.}
+  \bibinfo{year}{2015}\natexlab{b}.
+\newblock \showarticletitle{SAGA: A standardized access layer to heterogeneous
+  distributed computing infrastructure}.
+\newblock \bibinfo{journal}{\emph{SoftwareX}}  \bibinfo{volume}{1}
+  (\bibinfo{year}{2015}), \bibinfo{pages}{3--8}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Paraskevakos, Turrili, Gon{\c{c}}alves, Lynch,
+  and Jha}{Paraskevakos et~al\mbox{.}}{2019}]%
+        {CI:20}
+\bibfield{author}{\bibinfo{person}{Ioannis Paraskevakos},
+  \bibinfo{person}{Matteo Turrili}, \bibinfo{person}{Bento~Collares
+  Gon{\c{c}}alves}, \bibinfo{person}{Heather~J. Lynch}, {and}
+  \bibinfo{person}{Shantenu Jha}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Workflow Design Analysis for High Resolution
+  Satellite Image Analysis}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1905.09766}
+  (\bibinfo{year}{2019}).
+\newblock
+\showeprint[arxiv]{1905.09766}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1905.09766}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Pypi}{Pypi}{2020}]%
+        {pypiweb:20}
+\bibfield{author}{\bibinfo{person}{Pypi}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{PyPI · The Python Package Index}}.
+\newblock
+\urldef\tempurl%
+\url{https://pypi.org/}
+\showURL{%
+Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Turilli, Balasubramanian, Merzky,
+  Paraskevakos, and Jha}{Turilli et~al\mbox{.}}{2019}]%
+        {turilli2019middleware}
+\bibfield{author}{\bibinfo{person}{Matteo Turilli}, \bibinfo{person}{Vivek
+  Balasubramanian}, \bibinfo{person}{Andre Merzky}, \bibinfo{person}{Ioannis
+  Paraskevakos}, {and} \bibinfo{person}{Shantenu Jha}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Middleware building blocks for workflow systems}.
+\newblock \bibinfo{journal}{\emph{Computing in Science \& Engineering}}
+  \bibinfo{volume}{21}, \bibinfo{number}{4} (\bibinfo{year}{2019}),
+  \bibinfo{pages}{62--75}.
+\newblock
+
+
+\end{thebibliography}

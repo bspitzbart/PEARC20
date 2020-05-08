@@ -1,0 +1,359 @@
+%%
+%% This is file `sample-manuscript.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `manuscript')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-manuscript.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[manuscript,screen]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2018}
+\acmYear{2018}
+\acmDOI{10.1145/1122445.1122456}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
+  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+  June 03--05, 2018, Woodstock, NY}
+\acmPrice{15.00}
+\acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[ICEBERG (A Research Programmer's Perspective)]{
+	ICEBERG:
+	Imagery Cyber-infrastructure and Extensible Building blocks to Enhance Research in the Geosciences. (A Research Programmer's Perspective)
+}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Bradley D. Spitzbart}
+%%\authornote{Both authors contributed equally to this research.}
+\email{bradley.spitzbart@stonybrook.edu}
+%%\orcid{1234-5678-9012}
+\author{Heather J. Lynch}
+%%\authornotemark[1]
+\email{heather.lynch@stonybrook.edu}
+\affiliation{%
+	\institution{Stony Brook University}
+	%%\streetaddress{P.O. Box 1212}
+	\city{Stony Brook}
+	\state{New York}
+	%%\postcode{43017-6221}
+}
+
+\author{Matteo Turilli}
+\email{matteo.turilli@rutgers.edu}
+\author{Shantenu Jha}
+\email{shantenu.jha@rutgers.edu}
+\affiliation{%
+	\institution{Rutgers University}
+	%%\streetaddress{1 Th{\o}rv{\"a}ld Circle}
+	\city{New Brunswick}
+	\state{New Jersey}}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+%%\renewcommand{\shortauthors}{Spitzbart and Lynch, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+	The ICEBERG (Imagery Cyber-infrastructure and Extensible Building blocks to Enhance Research in the Geosciences) project (NSF \#~1740595) aims to (1) develop open source image classification tools tailored to high-resolution satellite imagery of the Arctic and Antarctic to be used on HPDC resources, (2) create easy-to-use interfaces to facilitate the development and testing of algorithms for application to specific geoscience requirements, (3) apply these tools through use cases that span the biological, hydrological, and geoscience needs of the polar community, and (4) transfer these tools to the larger non-polar community. Here we report on the project status and lessons learned.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10011007.10011074.10011134.10011135</concept_id>
+	<concept_desc>Software and its engineering~Programming teams</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10010405.10010432.10010437.10010438</concept_id>
+	<concept_desc>Applied computing~Environmental sciences</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~Programming teams}
+\ccsdesc[500]{Applied computing~Environmental sciences}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{cyberinfrastructure, geosciences, high resolution satellite imagery}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+Satellite imagery is rapidly transforming the way we see the planet, including our ability to study the most remote parts of the Arctic and Antarctic. Satellite imagery can help us map networks of rivers, study changes in the flow and thickness of glaciers, identify rock and soil types, and even find animals like penguins and seals. Because the availability of imagery in polar areas has increased rapidly over the last decade, we are now faced with a challenge: How do we scale-up the scientific discoveries that have been enabled by satellite imagery to larger spatial scales?
+
+\section{Design}
+This project was inspired by a workshop held at the Polar Geospatial Center in June 2016, sponsored by the Research Coordination Network on high-performance computing in the polar sciences.  ICEBERG then began in fall 2017 and was fully formed by spring 2018.  The collaborations, roles, and workflows were deliberately designed as a novel and efficient means to facilitate domain researchers' understanding and access to cyberinfrastructure and high performance computing to expand their science. 
+
+\subsection{Collaborations}
+In June 2016, the RCN for High-Performance Distributed Computing in the Polar Sciences (NSF Award 1542110) held a two-day workshop hosted by the PGC at the University of Minnesota. The goal of this workshop, which included 20 experts from polar geosciences and high performance computing, was to identify current barriers to the integration of high performance computing and satellite imagery-enabled science. 
+
+There was broad consensus that individual science PIs did not want the 
+responsibility or hassle of moving and storing high-resolution imagery. 
+Local campus infrastructure often makes the transfer, storage and computing of imagery from the PGC impractical. While custom analyses on small numbers of images are feasible, scaling up an existing workflow to large portions of the imagery archive represents a significant barrier to the community. Under 
+the current system, imagery needs to be transferred from the PI’s local system to a high performance machine, any analysis pipeline involving licensed software needs to be re-written using open source tools, and tasks need to be scheduled and distributed efficiently among compute nodes. 
+Despite varied programming expertise within the polar science community, the details of executing large-scale distributed computing processes creates a real barrier to the kinds of iterated problem solving typical for scientific discovery. In terms of priority imagery-enabled science questions, there was remarkable convergence around the need for open-source image classification algorithms to automatically identify target features. 
+
+While several core projects were identified as particularly important, and these form the basis for our case studies, the underlying requirements were strongly overlapping, and it was possible to envision a common infrastructure that would meet all of the identified needs as well as many more that did not arise at the workshop. Our interest in high throughput image classification was redoubled by an RCN-sponsored polar hackathon in July 2016, where two of four community-contributed projects involved image classification. 
+
+It must, therefore, be emphasized that our proposed cyberinfrastructure (CI) was a direct response to the needs of the polar and geoscience communities and our solution developed through an extended period of requirements scoping. The selection of the ICEBERG team was driven by a desire to have use cases that spanned the types of problems faced by the geosciences community, even if the specific questions to be addressed were focused on polar science specifically. 
+
+ICEBERG is now a collaboration of 4 U.S. institutions including Stony Brook University, Rutgers University, Northern Arizona University, and the University of California - Santa Barbara.  There are 12 - 15 individuals participating in the project at any given time.  ICEBERG is also part of the EarthCube community.  Other affiliates include the Polar Geospatial Center (PGC) at the University of Minnesota where we obtain most of the imagery needed and XSEDE for supercomputing resources.  
+
+
+\subsection{Roles}
+Roles within the organization are split among Principle Investigators (PIs), Cyberinfrastructure (CI) Architect, CI team, Research Programmer, Co-PIs, and Developers, with many overlapping facets and responsibilities.  
+
+The PIs are Lynch, heading the science teams and Jha, leading the cyberinfrastructure side.  They are responsible for the overall direction of the project, communication and reporting with funding sources, and recruiting new projects.
+
+The CI architect (Turilli) oversees the graduate student CI team.  They 
+advise on best practices and lead research involving the bridge between 
+distributed and high performance computing, designing middleware for 
+scientific cyberinfrastructures, and supporting domain-specific scientific 
+workflows.  This role brings extensive experience and knowledge for solving 
+technical, implementation, and logistical issues.
+
+The CI team are the developers of RADICAL-Cybertools (RCT) \cite{turilli2019middleware} \cite{RCTweb:20} at Rutgers University which allow to transition desktop image processing to large-scale processing on high performance computing (HPC) platforms. Specifically, the CI team are experts at converting linear codes that process one image at a time into parallelized tasks that process many images at once on multi-core systems.  RADICAL-Cybertools comprise three main software systems: EnsembleToolkit (EnTK)~\cite{balasubramanian2018harnessing}, RADICAL-Pilot (RP)~\cite{RP:18} and RADCIAL-SAGA (RS)~\cite{merzky2015saga}. When used together, these systems enable the specification and execution of workflows (EnTK) via a pilot-based workload management system (RP) on diverse HPC platforms (RS). RADICAL-Cybertools offers three main benefits: (1) explicit specification of adaptive ensemble applications; (2) high-throughput concurrent execution of heterogeneous tasks (1 minute to 24 hours long, single/multi core/GPU, OpenMP, MPI); and (3) concurrent and sequential task executions on the same pilot.
+The CI team is also responsible for performance testing, profiling, and optimization~\cite{CI:20}. 
+
+The Research Programmer (Spitzbart) is the link between the science and CI teams.  This role oversees the day-to-day operations of the ICEBERG team, including keeping the general timeline and schedules.
+It requires a basic understanding of the overall science goals and detailed 
+experience with the code development and algorithm implementations.  In the case of ICEBERG, knowledge of image analysis, GIS and Remote
+Sensing concepts and a good network within the HPC community have been very helpful.  They 
+first work with the Co-PIs to learn the science drivers, previous work, 
+current status, and end products of their projects.  Then, works closely with the developers on software engineering methodology and any technical issues that arise.  Next, the research programmer communicates 
+with the CI team to be sure the algorithms are properly translated for large-scale processing in order to achieve the science goals and to facilitate the dialogue between the CI and science teams.  Finally, at all times they keep the PIs apprised of progress and difficulties.  At various stages this 
+role can be described as trainer, motivator, and process checker. 
+
+The Co-PIs oversee their individual research programs at their own institutions.  They each lead one of the use cases described in section~\ref{sec:cases}.
+
+The developers generate the core algorithms and code for their own projects, with one or two members devoted to each use case.  They consist of postdocs, graduate students, and undergraduates.
+\subsection{Workflows}
+In keeping with NSF policy and good open source doctrine all code is developed
+in public GitHub repositories (https://github.com/iceberg-project).
+ICEBERG uses git-flow~\cite{gitflow:20} as the development and branching  
+model, with some simplifications.  All development (i.e. commits to git) 
+should be related to an issue or pull request.  Any active development is 
+done to branches based on a specified procedure. When they are stable and 
+tested, a pull request is created towards the devel branch. At least one 
+reviewer should check the pull request, before it is merged. GitHub allows 
+protecting branches from direct commits. The master branch should be 
+protected and commits should happen only through approved pull requests with 
+at least one reviewer accepting.  Along the way, Travis CI~\cite{travis:20}
+is deployed to catch bugs and maintain good style.  
+When a significant development phase is finished, and tested, a pull request will be submitted from devel to master. When that is merged we will consider everything released and ready for executing production runs.
+
+\section[cases]{Use Cases}
+\label{sec:cases}
+There are three major use cases that are being developed initially for ICEBERG, which collectively cover many possible applications in geosciences and biology.  We anticipate processing more than 300 TB of imagery data, using 100,000 core hours of CPU time and 15,000 GPU hours.
+\subsection{Biological - Seals and Penguins}
+Antarctic pack-ice seals, a group of four species of true seals (Phocidae), play a pivotal role in the Southern Ocean foodweb as wide-ranging Antarctic krill (Euphausia superba) predators. This project aims to automate pack-ice seal surveys using a combination of remote sensing, computer vision, seal ecology and HPC. Apart from being cheaper and safer when compared to aerial imagery, the scale at which we can survey pack-ice seals with remote sensing imagery will fill an important information gap in Antarctic ecology. This study also showcases the ever-growing benefits of incorporating AI into ecological sampling designs. We provide a detection algorithm to extract the location of seals from high-resolution imagery. This algorithm was developed by convolutional neural network training to detect and count seal haul-outs. This is beneficial, as a comprehensive pack-ice seal census and monitoring will provide key information on the health and evolution of the Southern Ocean ecosystem.
+
+We also provide a detection algorithm (ICEBERG-Penguins) to extract the location of penguin colonies from high-resolution imagery. This algorithm was developed by convolutional neural network training to detect the extent of guano patches indicating penguin colonies. This is beneficial, as a penguin colony census and monitoring will provide key information on the health and evolution of the Antarctic ecosystem. 
+
+\subsection{Geological - LandCover}
+ICEBERG-LandCover is a pipeline for automated processing of satellite imagery, automated detection and removal of snow, ice, water, and shadows from the scene, automated atmospheric characterization and removal, and automated “stretching'' of the scenes to provide spatial coverage of surveyed area, reasonable estimates on atmospheric contributions, and comparisons to a spectral library of known geologic materials. 
+
+\subsection{Hydrological - Rivers}
+We provide a classification algorithm for ice surface features from high-resolution imagery. This algorithm was developed by convolutional neural network training to detect regions of large and small rivers and to distinguish them from crevasses and non-channelized slush. We also provide a detection algorithm to extract polyline water features from the classified high-probability river areas. 
+
+\section{Implementation}
+This section describes key aspects of a successful program.  Many of these 
+follow from standard best practices while others came about through trial and error.
+
+
+\subsection{Developer Training}
+Most of the developers are from the domain science realm with no formal programming training.  This offers a flexibility to request simplicity and uniformity across the various use cases.
+
+The Reasearch Programmer and CI team provide initial training and ongoing support in topics such as Linux, Python, command line, Github, HPC using 
+Software Carpentry modules~\cite{SWweb:20} and other resources.  There have
+been many screen sharing sessions to facilitate this learning with 
+much patience on both ends and with the most sufficient simplifications.
+
+\subsection{Communication}
+Given the wide geographical dispersion of the ICEBERG team members, communication has been key.  We accomplish this through bi-weekly all-hands meetings through Zoom. A typical agenda consists of (1) a review of the past two weeks activities of each group, (2) a 30 minute presentation of project status from one use-case, an affiliate such as PGC, or a guest interested in using ICEBERG in their work, and (3) action items for the next two weeks.  On the off weeks there is a meeting between the CI team and Research Programmer, which occur in person at least every three months.
+
+The Research Programmer is available at all times for Zoom calls with 
+Co-PI's, developers, and/or the CI team.  We also prefer to utilize Slack
+over email for written discussions in order to maintain a common record
+in one place.
+
+\subsection{Documentation}
+Each use case is required to complete a Software Requirements Specification (SRS) that lays out the functional and non-functional requirements including descriptions of user interfaces, inputs, outputs, and default parameters.
+This is used by the CI team to pre-plan their approach before seeing any code.
+
+Also required from each use case is a schematic of the stages and tasks
+implemented in the code. This is formulated in conjunction with the developers and the Research Programmer. 
+Figure~\ref{fig:sealsarch} shows an example architecture split into stages and tasks for efficient ensemble execution.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{SealsExecutionArchitecture}
+	\caption{An example schematic of the Seals execution architecture.}
+	\label{fig:sealsarch}
+	\Description{An example schematic of the Seals execution architecture.}
+\end{figure}
+
+During development we make heavy use of GitHub's ``issue" tabs to track bugs, enhancements, or other requests.  In fact, it is our policy that all 
+commits should be in response to an open issue (of course, new issues can be opened directly before a commit then closed immediately).  This has been valuable to provide a long history of all changes.
+
+User documentation will consist of command line help pages and web resources
+linked to the ICEBERG web portal~\cite{icebergweb:20}.
+
+\subsection{Challenges}
+One initial challenge was onboarding the teams to use Linux and GitHub.  
+Most were only familiar with Windows or Mac systems and had not been 
+exposed to version control.  The transition took some time though thoughtful and patient training and trust building.  Some concessions were made on the stricter Travis CI
+rules, for example.  All now agree that the structure actually makes the work easier.
+
+Another challenge faced by the ICEBERG team was the reluctance for 
+domain scientists to work within the Agile-based framework we had intended 
+at the outset of the project. It was particularly difficult to get domain 
+scientists to release code at its intermediate stages, even to share the 
+code with other members of the software development team. These challenges 
+speak to the culture within domain science research groups, whereby 
+typically a single researcher is developing code and code is only shared or 
+published once it is ``perfect''. These challenges persisted even once we 
+had an established GitHub repository and were not a function of not knowing 
+how, at a technical level, to share code with other members of the team. As 
+a result, domain science teams labored too long on problems that could have 
+been more easily addressed by the research programmers involved with the 
+project. It also made it difficult to ensure consistency across different 
+use cases in how larger workflows were divided into smaller modules. 
+
+An 
+additional challenge is that domain scientists are often uncomfortable 
+working in a public github environment where other researchers could 
+``scoop'' their code before it has been fully developed and published.
+We have overcome this dichotomy by assuring the teams that the HPC pipeline
+can move forward without the ``perfect'' code needed for publishable results.
+The CI team can work with placeholder functions, but does need all the steps 
+to create, verify, and profile the pipeline.  An example of this is within 
+the LandCover project where atmospheric correction and shadow detection are 
+crucial.  There is no concensus among researcher on the correct way to 
+handle these issues, but we have added ``dummy" stages to accommodate them 
+which can be easily replaced when the correct solution is found. 
+
+\section{Science Results}
+The first science-domain results from ICEBERG have been published in {\textsl{Remote Sensing of Environment}} on the Seals use case~\cite{BCG:20}
+This paper represents the first step towards a regular, cost-effective, pan-Antarctic seal monitoring program.  It outlines the first automated system for surveying seals using satellite imagery, 
+finding 30\% of seals while only generating less than 2 false-positives per correct detection, and running
+over 10× faster than an experienced human observer using a single GPU.
+
+Other preliminary results have been presented for the Rivers, LandCover, and Penguins use cases at EarthCube and American Geophysical Union (AGU) conferences over the past two years.
+\section{Further Work}
+\subsection{Public distribution and support}
+The ICEBERG packages will be released via PyPI~\cite{pypiweb:20} and will also be installable from the GitHub repository.  The Seals prototype was released in August 2019 and Penguins in February 2020.  The LandCover and Rivers use cases 
+will follow in summer and fall 2020.
+
+Each use case is released as a separate, stand-alone package and the 
+middleware is contained in its own package.  The stand-alone product can be used for small batches of imagery or coupled with the middleware for
+large-scale production.
+
+We encourage any researchers working on high resolution imagery intensive projects to contact any ICEBERG team member via the website for support in implementing ICEBERG. 
+
+\subsection{Non-polar applications}
+Throughout the ICEBERG project we have been struck by the commonalities that
+appeared among the wide-ranging use cases.  The same principles, techniques,
+and even code can be reused by multiple projects.  We have recently partnered with 
+the Institute for Marine Remote Sensing (IMaRS)~\cite{imarsweb:20} at
+the University of South Florida to help with processing imagery of coastal
+regions around the Gulf of Mexico.  We look forward to assisting other
+groups in similar ways. 
+\begin{acks}
+	ICEBERG is supported by NSF collaborative grant \#1740595.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{iceberg-pearc}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-manuscript.tex'.
