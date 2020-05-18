@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{14}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -141,6 +141,17 @@ Retrieved February 16, 2020 from \tempurl}
 \url{http://imars.usf.edu/}
 \showURL{%
 Retrieved February 16, 2020 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Jupyter}{Jupyter}{2020}]%
+        {JNweb:20}
+\bibfield{author}{\bibinfo{person}{Jupyter}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Jupyter Notebook Home}}.
+\newblock
+\urldef\tempurl%
+\url{https://jupyter.org}
+\showURL{%
+Retrieved May 18, 2020 from \tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Merzky, Santcroos, Turilli, and Jha}{Merzky
