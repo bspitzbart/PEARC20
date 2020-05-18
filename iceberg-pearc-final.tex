@@ -36,17 +36,15 @@
 %% the commands and values with those provided to you when you
 %% complete the rights form.
 \setcopyright{acmcopyright}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{10.1145/1122445.1122456}
 
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
-  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-  June 03--05, 2018, Woodstock, NY}
+
+\copyrightyear{2020}
+\acmYear{2020}
+\setcopyright{acmcopyright}\acmConference[PEARC '20]{Practice and Experience in Advanced Research Computing}{July 26--30, 2020}{Portland, OR, USA}
+\acmBooktitle{Practice and Experience in Advanced Research Computing (PEARC '20), July 26--30, 2020, Portland, OR, USA}
 \acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+\acmDOI{10.1145/3311790.3396640}
+\acmISBN{978-1-4503-6689-2/20/07}
 
 
 %%
@@ -162,23 +160,18 @@
 Satellite imagery is rapidly transforming the way we see the planet, including our ability to study the most remote parts of the Arctic and Antarctic. Satellite imagery can help us map networks of rivers, study changes in the flow and thickness of glaciers, identify rock and soil types, and even find animals like penguins and seals. Because the availability of imagery in polar areas has increased rapidly over the last decade, we are now faced with a challenge: How do we scale-up the scientific discoveries that have been enabled by satellite imagery to larger spatial scales?
 
 \section{Design}
-This project was inspired by a workshop held at the Polar Geospatial Center in June 2016, sponsored by the Research Coordination Network on high-performance computing in the polar sciences.  ICEBERG then began in fall 2017 and was fully formed by spring 2018.  The collaborations, roles, and workflows were deliberately designed as a novel and efficient means to facilitate domain researchers' understanding and access to cyberinfrastructure and high performance computing to expand their science. 
+This project was inspired by several events sponsored by the Research Coordination Network (RCN; NSF Award 1542110) on high-performance computing in the polar sciences, including a workshop held at the University of Minnesota’s Polar Geospatial Center (PGC) in June 2016 and two hackathons for the polar science community in July 2016 and August 2017. The goal of the RCN’s 2016 PGC workshop, which included 20 experts from polar geosciences and high performance computing, was to identify current barriers to the integration of high performance computing and satellite imagery-enabled science.  There was broad consensus that individual sciencePIs did not want the responsibility or hassle of moving and storing high-resolution imagery. Local campus infrastructure often makes the transfer, storage and computing of imagery from the PGC impractical. While custom analyses on small numbers of images are feasible, scaling up an existing workflow to large portions of the imagery archive represents a significant barrier to the community. Under the current system, imagery needs to be transferred from the PI’s local system to a high-performance machine, any analysis pipeline involving licensed software needs to be re-written using open source tools, and tasks need to be scheduled and distributed efficiently among compute nodes. That workshop identified several core needs within the polar science community that could be simultaneously addressed by the development of software tools for high-throughput processing of high resolution commercial satellite imagery. Despite varied programming expertise within the polar science community, the details of executing large-scale distributed computing processes creates a real barrier to the kinds of iterated problem solving typical for scientific discovery. In terms of priority imagery-enabled science questions, there was remarkable convergence around the need for open-source image classification algorithms to automatically identify target features. The ICEBERG (SPELL OUT HERE) project, which was designed around a series of diverse use cases all requiring similar computational infrastructure, was initiated in late 2017 under the auspices of funding from the NSF EarthCube program (<Award Number>). The collaborations, roles, and workflows were deliberately designed as a novel and efficient means to facilitate domain researchers' understanding and access to cyberinfrastructure and high performance computing to expand their science. 
+
+ICEBERG then began in fall 2017 and was fully formed by spring 2018.  The collaborations, roles, and workflows were deliberately designed as a novel and efficient means to facilitate domain researchers' understanding and access to cyberinfrastructure and high performance computing to expand their science. 
 
 \subsection{Collaborations}
-In June 2016, the RCN for High-Performance Distributed Computing in the Polar Sciences (NSF Award 1542110) held a two-day workshop hosted by the PGC at the University of Minnesota. The goal of this workshop, which included 20 experts from polar geosciences and high performance computing, was to identify current barriers to the integration of high performance computing and satellite imagery-enabled science. 
+Our proposed cyberinfrastructure (CI) was a direct response to the needs of the polar and geoscience communities and our solution developed through an extended period of requirements scoping. The selection of the ICEBERG team was driven by a desire to have use cases that spanned the types of problems faced by the geosciences community, even if the specific questions to be addressed were focused on polar science specifically. 
 
-There was broad consensus that individual science PIs did not want the 
-responsibility or hassle of moving and storing high-resolution imagery. 
-Local campus infrastructure often makes the transfer, storage and computing of imagery from the PGC impractical. While custom analyses on small numbers of images are feasible, scaling up an existing workflow to large portions of the imagery archive represents a significant barrier to the community. Under 
-the current system, imagery needs to be transferred from the PI’s local system to a high performance machine, any analysis pipeline involving licensed software needs to be re-written using open source tools, and tasks need to be scheduled and distributed efficiently among compute nodes. 
-Despite varied programming expertise within the polar science community, the details of executing large-scale distributed computing processes creates a real barrier to the kinds of iterated problem solving typical for scientific discovery. In terms of priority imagery-enabled science questions, there was remarkable convergence around the need for open-source image classification algorithms to automatically identify target features. 
-
-While several core projects were identified as particularly important, and these form the basis for our case studies, the underlying requirements were strongly overlapping, and it was possible to envision a common infrastructure that would meet all of the identified needs as well as many more that did not arise at the workshop. Our interest in high throughput image classification was redoubled by an RCN-sponsored polar hackathon in July 2016, where two of four community-contributed projects involved image classification. 
+Several core applications were identified at the outset of the ICEBERG projectas both scientifically important and with similar overlapping computational needs. All of these initial use cases involved high-resolution commercial imagery, though at its outset, only one of these projects involved the explicit application of computer vision tools such as Convolutional Neural Networks (CNNs). In the early development of ICEBERG, however, all but one of our use cases ended up involving CNNs for feature detection and classification, which generated even greater synergy between the different applications and the opportunity to focus, at least initially, on building libraries and cyberinfrastructure tailored for computer vision and other GPU-intensive tasks.
 
 It must, therefore, be emphasized that our proposed cyberinfrastructure (CI) was a direct response to the needs of the polar and geoscience communities and our solution developed through an extended period of requirements scoping. The selection of the ICEBERG team was driven by a desire to have use cases that spanned the types of problems faced by the geosciences community, even if the specific questions to be addressed were focused on polar science specifically. 
 
-ICEBERG is now a collaboration of 4 U.S. institutions including Stony Brook University, Rutgers University, Northern Arizona University, and the University of California - Santa Barbara.  There are 12 - 15 individuals participating in the project at any given time.  ICEBERG is also part of the EarthCube community.  Other affiliates include the Polar Geospatial Center (PGC) at the University of Minnesota where we obtain most of the imagery needed and XSEDE for supercomputing resources.  
-
+ICEBERG is now a collaboration of 5 U.S. institutions including Stony Brook University, Rutgers University, Northern Arizona University, the University of California - Santa Barbara, and the University of Colorado Boulder.  Additional use cases have been supported in the latter phases of ICEBERG; these new use cases have engaged teams from the University of Connecticut, University of Alaska - Fairbanks, University of South Florida, and Boise State University.  There are 12 - 15 individuals participating in the project at any given time. Other affiliates include the PGC, which provides imagery access and processing support, as well as NSF’s XSEDE supercomputing resources. 
 
 \subsection{Roles}
 Roles within the organization are split among Principle Investigators (PIs), Cyberinfrastructure (CI) Architect, CI team, Research Programmer, Co-PIs, and Developers, with many overlapping facets and responsibilities.  
@@ -242,20 +235,12 @@ follow from standard best practices while others came about through trial and er
 
 
 \subsection{Developer Training}
-Most of the developers are from the domain science realm with no formal programming training.  This offers a flexibility to request simplicity and uniformity across the various use cases.
-
-The Reasearch Programmer and CI team provide initial training and ongoing support in topics such as Linux, Python, command line, Github, HPC using 
-Software Carpentry modules~\cite{SWweb:20} and other resources.  There have
-been many screen sharing sessions to facilitate this learning with 
-much patience on both ends and with the most sufficient simplifications.
+Most of the researchers involved with the ICEBERG project are domain scientists with no formal programming training and little-to-no experience with software development. While this presents some challenges, it also provides the opportunity to enforce a level of code simplicity and uniformity across the various use cases.The Research Programmer and CI team provide initial training and ongoing support in topics such as Linux, Python, command line, Github, HPC using Software Carpentry modules~\cite{SWweb:20} and other resources. While the geographically dispersed nature of the team made it difficult to use pair-programming or other techniques for co-production and training, regular screen sharing sessions facilitated learning. As is perhaps not uncommon, most of the code development was undertaken by Ph.D. students and postdocs, who worked closely with the research programmers and CI middleware developers. PIs leading the application research groups were less involved in the details of the software development and slower to learn the nuances of collaborative software development.
 
 \subsection{Communication}
-Given the wide geographical dispersion of the ICEBERG team members, communication has been key.  We accomplish this through bi-weekly all-hands meetings through Zoom. A typical agenda consists of (1) a review of the past two weeks activities of each group, (2) a 30 minute presentation of project status from one use-case, an affiliate such as PGC, or a guest interested in using ICEBERG in their work, and (3) action items for the next two weeks.  On the off weeks there is a meeting between the CI team and Research Programmer, which occur in person at least every three months.
+Given the wide geographical dispersion of the ICEBERG team members, regular consistent communication has been key. We accomplish this through bi-weekly “all-hands” Zoom meetings involving the entire ICEBERG team and alternating bi-weekly meetings of the CI team alone. A typical “all-hands” meeting agenda consists of (1) a review of the activities of each group over the last two week period, (2) a 30 minute presentation of project status from one use-case, an affiliate such as PGC, or a guest interested in using ICEBERG in their work, and (3) action items for the next two weeks. In person meetings of the CI team occur approximately every three months.
 
-The Research Programmer is available at all times for Zoom calls with 
-Co-PI's, developers, and/or the CI team.  We also prefer to utilize Slack
-over email for written discussions in order to maintain a common record
-in one place.
+The Research Programmer is available at all times for Zoom calls with Co-PI's, developers, and/or the CI team. We use Slack rather than email for written discussions to maintain a common record in one place and the ability to easily add or subtract team members from the channels involving each use case.
 
 \subsection{Documentation}
 Each use case is required to complete a Software Requirements Specification (SRS) that lays out the functional and non-functional requirements including descriptions of user interfaces, inputs, outputs, and default parameters.
@@ -280,38 +265,12 @@ User documentation will consist of command line help pages and web resources
 linked to the ICEBERG web portal~\cite{icebergweb:20}.
 
 \subsection{Challenges}
-One initial challenge was onboarding the teams to use Linux and GitHub.  
-Most were only familiar with Windows or Mac systems and had not been 
-exposed to version control.  The transition took some time though thoughtful and patient training and trust building.  Some concessions were made on the stricter Travis CI
-rules, for example.  All now agree that the structure actually makes the work easier.
+One initial challenge was onboarding each domain science teams to the use of Linux and GitHub. Most project members were only familiar with Windows or Mac systems and had not been  exposed to version control. The transition took some time though thoughtful and patient training and trust building and some concessions were made on, for example, the stricter Travis CI rules. All now agree that the structure, while cumbersome to learn at first, makes the 
+work easier and this experience will have a lasting impact on the project management for all the domain science participants involved.
 
-Another challenge faced by the ICEBERG team was the reluctance for 
-domain scientists to work within the Agile-based framework we had intended 
-at the outset of the project. It was particularly difficult to get domain 
-scientists to release code at its intermediate stages, even to share the 
-code with other members of the software development team. These challenges 
-speak to the culture within domain science research groups, whereby 
-typically a single researcher is developing code and code is only shared or 
-published once it is ``perfect''. These challenges persisted even once we 
-had an established GitHub repository and were not a function of not knowing 
-how, at a technical level, to share code with other members of the team. As 
-a result, domain science teams labored too long on problems that could have 
-been more easily addressed by the research programmers involved with the 
-project. It also made it difficult to ensure consistency across different 
-use cases in how larger workflows were divided into smaller modules. 
+Another challenge faced by the ICEBERG team was the reluctance for domain scientists to work within the Agile-based framework we had intended at the outset of the project. It was particularly difficult to get domain scientists to release code at its intermediate stages, even to share the  code with other members of the software development team. These challenges speak to the culture within domain science research groups, whereby  typically a single researcher is developing code and code is only shared or published once it is ``perfect''. These challenges persisted even once we had an established GitHub repository and were not a function of not knowing  how, at a technical level, to share code with other members of the team. As a result, domain science teams labored too long on problems that could have  been more easily addressed by the research programmers involved with the  project. It also made it difficult to ensure consistency across different use cases in how larger workflows were divided into smaller modules.
 
-An 
-additional challenge is that domain scientists are often uncomfortable 
-working in a public github environment where other researchers could 
-``scoop'' their code before it has been fully developed and published.
-We have overcome this dichotomy by assuring the teams that the HPC pipeline
-can move forward without the ``perfect'' code needed for publishable results.
-The CI team can work with placeholder functions, but does need all the steps 
-to create, verify, and profile the pipeline.  An example of this is within 
-the LandCover project where atmospheric correction and shadow detection are 
-crucial.  There is no concensus among researcher on the correct way to 
-handle these issues, but we have added ``dummy" stages to accommodate them 
-which can be easily replaced when the correct solution is found. 
+An additional challenge is that domain scientists are often uncomfortable  working in a public github environment where other researchers could  ``scoop'' their code before it has been fully developed and published. We have overcome this dichotomy by assuring the teams that the HPC pipeline can move forward without the ``perfect'' code needed for publishable results.  The CI team can work with placeholder functions, but does need all the steps to create, verify, and profile the pipeline. An example of this is within the LandCover use case where atmospheric correction and shadow detection are crucial.  There is no concensus among researchers on the correct way to handle these issues, but we added ``dummy" stages to the pipeline to permit progress on the rest of the workflow and its optimization that can be easily replaced when an acceptable solution is found.
 
 \section{Science Results}
 The first science-domain results from ICEBERG have been published in {\textsl{Remote Sensing of Environment}} on the Seals use case~\cite{BCG:20}
